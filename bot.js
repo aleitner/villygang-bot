@@ -1,7 +1,4 @@
 const Discord = require('discord.js');
-var auth = require('./auth.json');
-
-token = process.env.BOT_TOKEN ? process.env.BOT_TOKEN : auth.token
 
 // Initialize Discord Bot
 var client = new Discord.Client();
@@ -25,4 +22,4 @@ client.on('message', msg => {
     msg.delete(1000)
 });
 
-client.login(token);
+client.login(process.env.BOT_TOKEN);
