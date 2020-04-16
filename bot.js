@@ -8,7 +8,7 @@ client.on('ready', () => {
 });
 
 client.on('message', msg => {   
-    if (!msg.channel.name.includes("villygang")) {
+    if (!msg.channel.name.includes("yanceygang")) {
         return
     }
     
